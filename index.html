@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>xd</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="app.js" defer></script>
+
+    <link rel="stylesheet" href="splide-4.1.3/dist/css/splide.min.css" />
+    <script src="splide-4.1.3/dist/js/splide.min.js" defer></script>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Pages</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Portfolio</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+          </ul>
+          <a href="#" class="nav-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="1351 38 24 24"
+            >
+              <path
+                d="m1374.718 60.263-6.674-6.736a9.54 9.54 0 0 0 2.093-5.967c0-5.28-4.28-9.56-9.568-9.56-5.288 0-9.569 4.286-9.569 9.566 0 5.28 4.281 9.56 9.569 9.56 2.287 0 4.38-.8 6.03-2.137l6.632 6.692c.2.213.475.319.744.319.256 0 .512-.094.706-.281a1.034 1.034 0 0 0 .037-1.456Zm-14.15-5.192a7.466 7.466 0 0 1-5.312-2.2 7.458 7.458 0 0 1-2.2-5.305c0-2.005.781-3.892 2.2-5.305a7.466 7.466 0 0 1 5.313-2.199c2.006 0 3.893.781 5.312 2.2a7.458 7.458 0 0 1 2.2 5.304 7.437 7.437 0 0 1-2.2 5.305 7.466 7.466 0 0 1-5.312 2.2Z"
+                fill="#fff"
+                fill-rule="evenodd"
+                data-name="Icon ionic-ios-search"
+              />
+            </svg>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <section class="section-hero">
+        <div class="container">
+          <div class="hero">
+            <div class="hero-item">
+              <h1 class="hero-title">uniquepeople.sk</h1>
+              <p class="hero-text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+              </p>
+              <a href="#" class="hero-btn"
+                ><div class="hero-btn-text">Read More</div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="19"
+                  height="43.603"
+                >
+                  <path
+                    d="M8.596 43.223c.249.247.584.38.909.38.325 0 .66-.123.908-.38l8.207-8.16a1.275 1.275 0 0 0 0-1.817 1.292 1.292 0 0 0-1.827 0l-5.997 5.973V1.284C10.796.571 10.222 0 9.505 0c-.718 0-1.291.57-1.291 1.284v37.935l-6.007-5.973a1.292 1.292 0 0 0-1.827 0 1.275 1.275 0 0 0 0 1.816l8.216 8.161Z"
+                    fill="#0c2533"
+                    fill-rule="evenodd"
+                    data-name="Path 15470"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="hero-item">
+              <img src="assets/hero-img.png" alt="" class="hero-img" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-services">
+        <div class="container">
+          <div class="services">
+            <div class="services-top">
+              <div class="services-logo">
+                <img src="assets/logo-rusko.png" alt="" />
+              </div>
+              <h2 class="services-title">Services</h2>
+            </div>
+            <p class="services-text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry
+            </p>
+            <div
+              class="splide services-slider"
+              id="image-carousel"
+              aria-label="Beautiful Images"
+            >
+              <div class="splide__arrows">
+                <button class="splide__arrow splide__arrow--prev">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="46"
+                    height="30"
+                  >
+                    <path
+                      d="M17.89 5.735 12.265.11a.375.375 0 1 0-.53.53l4.985 4.985H.375a.375.375 0 1 0 0 .75H16.72l-4.985 4.985a.375.375 0 1 0 .53.53l5.625-5.625a.375.375 0 0 0 0-.53Z"
+                      fill-rule="evenodd"
+                      data-name="Path 15807"
+                    />
+                  </svg>
+                </button>
+                <button class="splide__arrow splide__arrow--next">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="46"
+                    height="30"
+                  >
+                    <path
+                      d="M17.89 5.735 12.265.11a.375.375 0 1 0-.53.53l4.985 4.985H.375a.375.375 0 1 0 0 .75H16.72l-4.985 4.985a.375.375 0 1 0 .53.53l5.625-5.625a.375.375 0 0 0 0-.53Z"
+                      fill-rule="evenodd"
+                      data-name="Path 15807"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide">
+                    <img src="/" class="splide-image" alt="" />
+                    <h4 class="splide-title"></h4>
+                    <p class="splide-text">Description 01</p>
+                    <a href="#" class="splide-link"
+                      >More
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="12"
+                      >
+                        <path
+                          d="M17.89 5.735 12.265.11a.375.375 0 1 0-.53.53l4.985 4.985H.375a.375.375 0 1 0 0 .75H16.72l-4.985 4.985a.375.375 0 1 0 .53.53l5.625-5.625a.375.375 0 0 0 0-.53Z"
+                          fill-rule="evenodd"
+                          data-name="Path 15807"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="splide__slide">
+                    <img src="/" class="splide-image" alt="" />
+                    <h4 class="splide-title"></h4>
+                    <p class="splide-text">Description 02</p>
+                    <a href="#" class="splide-link"
+                      >More
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="12"
+                      >
+                        <path
+                          d="M17.89 5.735 12.265.11a.375.375 0 1 0-.53.53l4.985 4.985H.375a.375.375 0 1 0 0 .75H16.72l-4.985 4.985a.375.375 0 1 0 .53.53l5.625-5.625a.375.375 0 0 0 0-.53Z"
+                          fill-rule="evenodd"
+                          data-name="Path 15807"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="splide__slide">
+                    <img src="/" class="splide-image" alt="" />
+                    <h4 class="splide-title"></h4>
+                    <p class="splide-text">Description 01</p>
+                    <a href="#" class="splide-link"
+                      >More
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="12"
+                      >
+                        <path
+                          d="M17.89 5.735 12.265.11a.375.375 0 1 0-.53.53l4.985 4.985H.375a.375.375 0 1 0 0 .75H16.72l-4.985 4.985a.375.375 0 1 0 .53.53l5.625-5.625a.375.375 0 0 0 0-.53Z"
+                          fill-rule="evenodd"
+                          data-name="Path 15807"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="splide__slide">
+                    <img src="/" class="splide-image" alt="" />
+                    <h4 class="splide-title"></h4>
+                    <p class="splide-text">Description 01</p>
+                    <a href="#" class="splide-link"
+                      >More
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="12"
+                      >
+                        <path
+                          d="M17.89 5.735 12.265.11a.375.375 0 1 0-.53.53l4.985 4.985H.375a.375.375 0 1 0 0 .75H16.72l-4.985 4.985a.375.375 0 1 0 .53.53l5.625-5.625a.375.375 0 0 0 0-.53Z"
+                          fill-rule="evenodd"
+                          data-name="Path 15807"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="splide__slide">
+                    <img src="/" class="splide-image" alt="" />
+                    <h4 class="splide-title"></h4>
+                    <p class="splide-text">Description 01</p>
+                    <a href="#" class="splide-link"
+                      >More
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="12"
+                      >
+                        <path
+                          d="M17.89 5.735 12.265.11a.375.375 0 1 0-.53.53l4.985 4.985H.375a.375.375 0 1 0 0 .75H16.72l-4.985 4.985a.375.375 0 1 0 .53.53l5.625-5.625a.375.375 0 0 0 0-.53Z"
+                          fill-rule="evenodd"
+                          data-name="Path 15807"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="splide__slide">
+                    <img src="/" class="splide-image" alt="" />
+                    <h4 class="splide-title"></h4>
+                    <p class="splide-text">Description 01</p>
+                    <a href="#" class="splide-link"
+                      >More
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="12"
+                      >
+                        <path
+                          d="M17.89 5.735 12.265.11a.375.375 0 1 0-.53.53l4.985 4.985H.375a.375.375 0 1 0 0 .75H16.72l-4.985 4.985a.375.375 0 1 0 .53.53l5.625-5.625a.375.375 0 0 0 0-.53Z"
+                          fill-rule="evenodd"
+                          data-name="Path 15807"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="splide__slide">
+                    <img src="/" class="splide-image" alt="" />
+                    <h4 class="splide-title"></h4>
+                    <p class="splide-text">Description 01</p>
+                    <a href="#" class="splide-link"
+                      >More
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="12"
+                      >
+                        <path
+                          d="M17.89 5.735 12.265.11a.375.375 0 1 0-.53.53l4.985 4.985H.375a.375.375 0 1 0 0 .75H16.72l-4.985 4.985a.375.375 0 1 0 .53.53l5.625-5.625a.375.375 0 0 0 0-.53Z"
+                          fill-rule="evenodd"
+                          data-name="Path 15807"
+                        />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-showcase">
+        <div class="container">
+          <div class="showcase">
+            <div class="showcase-item">
+              <div class="showcase-top">
+                <a href="#" class="showcase-title">Let's get started</a>
+                <p class="showcase-text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy.
+                </p>
+              </div>
+              <ol class="showcase-list">
+                <li class="showcase-list-item">
+                  <h4 class="showcase-list-subtitle">1. Best Performance</h4>
+                  <p class="showcase-text">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                </li>
+                <li class="showcase-list-item">
+                  <h4 class="showcase-list-subtitle">2. Easy Settings</h4>
+                  <p class="showcase-text">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                </li>
+                <li class="showcase-list-item">
+                  <h4 class="showcase-list-subtitle">3. Secure Multi Usable</h4>
+                  <p class="showcase-text">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                </li>
+              </ol>
+            </div>
+            <div class="showcase-item">
+              <img src="assets/mac.png" alt="mac" class="showcase-img" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-testimonials">
+        <div class="container">
+          <div class="testimonials">
+            <h1 class="testimonials-title">
+              Check testimonials for our satisfied clients
+            </h1>
+            <div class="testimonials-slider">
+              <div class="testimonials-person">
+                <img
+                  src="assets/guy.png"
+                  alt="person"
+                  class="testimonials-photo"
+                />
+                <span class="testimonials-name">Sd Jon</span>
+                <span class="testimonials-position">UX Designer</span>
+              </div>
+              <div class="testimonials-content">
+                <div class="testimonials-quote">
+                  <p class="testimonials-text">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s.
+                  </p>
+                  <img
+                    src="assets/quote.png"
+                    alt="quote"
+                    class="testimonials-quote-img"
+                  />
+                </div>
+                <div class="testimonials-navigation">
+                  <img
+                    src="assets/prev-arrow.png"
+                    alt="arrow"
+                    width="60"
+                    height="40"
+                    class="testimonials-navigation-prev"
+                  />
+                  <img
+                    src="assets/next-arrow.png"
+                    alt="arrow"
+                    width="60"
+                    height="40"
+                    class="testimonials-navigation-next"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-contact">
+        <div class="container">
+          <div class="contact">
+            <div class="contact-title-wrap">
+              <h2 class="contact-title">Contact Us</h2>
+              <div class="contact-divider"></div>
+            </div>
+            <form action="/" method="post" class="contact-form">
+              <select
+                class="contact-form-item"
+                name="select-subject"
+                id="select-subject"
+              >
+                <option value="subject" selected id="selected">subject</option>
+                <option value="cooperation">Cooperation</option>
+                <option value="work">Work</option>
+              </select>
+              <input
+                class="contact-form-item"
+                type="email"
+                name="input-email"
+                id="input-email"
+                placeholder="Email"
+              />
+              <textarea
+                class="contact-form-item"
+                name="input-message"
+                id="input-message"
+                cols="30"
+                rows="10"
+                placeholder="write your message here..."
+              ></textarea>
+              <button class="contact-form-submit">Submit</button>
+              <!-- <input class="contact-form-submit" type="submit" value="Submit" /> -->
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer">
+          <div class="footer-content">
+            <div class="footer-address">
+              <h3 class="footer-title">Logo.co</h3>
+              <div class="footer-text">
+                <p class="footer-text-item">
+                  Adress: 135 Barnard St. Brooklyn, NY 10036, United States
+                </p>
+                <p class="footer-text-item">Phone: 1-400-123-1234</p>
+                <p class="footer-text-item">Email: example@creativelab.com</p>
+              </div>
+            </div>
+            <div class="footer-services">
+              <h3 class="footer-title">Services</h3>
+              <div class="footer-text">
+                <p class="footer-text-item">Apps Developer</p>
+                <p class="footer-text-item">Graphic Designer</p>
+                <p class="footer-text-item">Web Developer</p>
+                <p class="footer-text-item">Marketing</p>
+                <p class="footer-text-item">iOS Developer</p>
+              </div>
+            </div>
+            <div class="footer-links">
+              <h3 class="footer-title">Links</h3>
+              <div class="footer-text">
+                <a class="footer-link">About</a>
+                <a class="footer-link">Blog</a>
+                <a class="footer-link">Team</a>
+                <a class="footer-link">Portfolio</a>
+                <a class="footer-link">Sign In</a>
+              </div>
+            </div>
+            <div class="footer-social">
+              <h3 class="footer-title">Get In Touch</h3>
+              <div class="footer-icons">
+                <a href="#" class="footer-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="11.093"
+                    height="20.711"
+                  >
+                    <path
+                      d="m10.366 11.65.575-3.748H7.344V5.469c0-1.025.503-2.025 2.114-2.025h1.635V.254S9.609 0 8.19 0C5.228 0 3.292 1.795 3.292 5.045v2.857H0v3.748h3.292v9.061h4.052V11.65h3.022Z"
+                      fill="#fff"
+                      fill-rule="evenodd"
+                      data-name="facebook-f"
+                    />
+                  </svg>
+                </a>
+                <a href="#" class="footer-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20.711"
+                    height="20.71"
+                    viewBox="72.611 0.001 20.711 20.71"
+                  >
+                    <path
+                      d="M77.247 20.711h-4.294V6.884h4.294v13.827Zm-2.15-15.713c-1.372 0-2.486-1.137-2.486-2.51a2.487 2.487 0 1 1 4.973 0c0 1.373-1.114 2.51-2.486 2.51Zm18.22 15.713h-4.284v-6.73c0-1.605-.033-3.662-2.233-3.662-2.232 0-2.574 1.743-2.574 3.546v6.846h-4.29V6.884h4.119V8.77h.06c.573-1.086 1.973-2.233 4.062-2.233 4.346 0 5.145 2.862 5.145 6.579v7.595h-.005Z"
+                      fill="#fff"
+                      fill-rule="evenodd"
+                      data-name="linkedin-in"
+                    />
+                  </svg>
+                </a>
+                <a href="#" class="footer-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25.5"
+                    height="20.71"
+                    viewBox="146.648 0 25.5 20.71"
+                  >
+                    <path
+                      d="M169.527 5.162c.016.226.016.453.016.68 0 6.908-5.258 14.869-14.87 14.869-2.96 0-5.71-.858-8.025-2.346.421.048.826.064 1.262.064 2.444 0 4.693-.825 6.489-2.232a5.235 5.235 0 0 1-4.887-3.625c.324.049.647.081.987.081.47 0 .939-.065 1.376-.178a5.227 5.227 0 0 1-4.191-5.129v-.064a5.263 5.263 0 0 0 2.362.663 5.222 5.222 0 0 1-2.33-4.353c0-.97.26-1.86.712-2.637a14.855 14.855 0 0 0 10.776 5.469 5.9 5.9 0 0 1-.13-1.197c0-2.88 2.33-5.227 5.227-5.227 1.504 0 2.864.632 3.818 1.65A10.29 10.29 0 0 0 171.436.39a5.212 5.212 0 0 1-2.297 2.88 10.477 10.477 0 0 0 3.009-.81 11.234 11.234 0 0 1-2.621 2.703Z"
+                      fill="#fff"
+                      fill-rule="evenodd"
+                      data-name="twitter"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            © Copyright 2020 Creative . X Design by Sumon
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      //   document.addEventListener("DOMContentLoaded", function () {
+      //     new Splide(".splide", {
+      //       type: "loop",
+      //       perPage: 4,
+      //     }).mount();
+      //   });
+    </script>
+  </body>
+</html>
